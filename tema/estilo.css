@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	  font-family: 'OpenSans';
+	/*  Para el resto de navegadores */
+		src: local('OpenSans'),
+			 url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+body{
+	background-image:url(../imagenes/background.png);
+	background-repeat:repeat;
+	margin:0;
+	padding:0;
+	font-family: "OpenSans", sans-sefif; 
+}
+
+.titulo_tab_principal{
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #999999;
+	position: relative;
+	width: 400px;
+	height: 30px;
+	color:#FFF;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:25px;	
+	font-weight:bold;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.celda_tabla_principal{
+	background-color:#C6DFE6;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #FFF;	
+	padding: 5px;
+}
+.celda_boton{
+	background-color:#FFF;
+}
+.letreros_tabla{
+	color:#666666;
+	text-align:center;
+	font-size:17px;	
+}
+
+.asterisco{
+	color:#2A5AA7;
+	width:auto;
+	border:#F00;
+	font-weight:bold;
+}
+.decoracion_tabla{
+	border:solid #C6DFE6; 
+	border-width:1px;
+}
+
+button{
+	background-color:#DDDDDD;
+	color:#2A5AA7;
+	text-align:center;
+	font-size:17px;	
+	border-radius: 10px;
+}
+.msg{
+	border-radius: 50px;
+	background-color: #999999;
+	position: relative;
+	color:#FFF;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:25px;	
+	font-weight:bold;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height:100px;
+	top: 30%;
+}
