@@ -1,0 +1,181 @@
+version 3.3.2 27/05/2021
+1. SiPall.Correccion en vueloNuevo.php, vueloTransferencia.php, vueloDespacho.php, para que muestre el alert mientras se está procesando el guardado y deshabilite este boton durante todo el proceso para evitar la pulsación repetida del mismo.
+***********
+
+version 3.3.1 21/05/2021
+1. SiPall.Correccion Ortográfica de Mayas por Mallas
+2. SiPall.Nuevo Reporte en excel con pallets del inventario
+3. SiPall.Cambio de tamaño de numero de pallet para que el sufijo soporte hasta 6 carcteres
+4. SiPall.Nueva funcionalidad de pallet repetido en inventario que exige agregar una novedad al momento de ser guardado el vuelo
+5. SiPall.Adicion de filtro general en toda la aplicación de Usuario x Aerolinea
+6. SiPall.Adicion de icono cargando_new.gif
+7. SiPall.Actualizacion de variable javascript en vueloNuevo
+***********
+
+version 3.3 08/05/2021
+1.  Incorporacion del sistema de Pallets SiPall.
+2.  Actualizacion del menú para incorporacion del SiPall.
+***********
+
+version 3.2.6 21/10/2020
+1.  Modificación de código para guardar la "Correccion" de datos por inconsistencias.
+2.  Marca de obligatoriedad en campos de formulario de "Correccion" de datos por inconsistencias.
+3.  Actualizacion de campo volumen, en salvado de "Correccion" de "Guias Despachadas".
+4.  Inicializacion de la variable id_tipo_bloqueo en consulta de guia.
+***********
+
+version 3.2.5 23/09/2020
+1.  Creación de “Reporte General de Despachos”, con información de guías despachas en “todas las modalidades”, no solo guías de transportador (Descargable a Excel).
+***********
+
+version 3.2.4 21/09/2020
+1. Creación de “Corrección de vuelo” para adicionar guía posterior a la Finalización por inconsistencias.
+***********
+
+version 3.2.3 15/09/2020
+1. Creación de “Corrección Volumen del Vuelo” con listado de guías del vuelo y la posibilidad de modificar el valor del volumen aún después de finalizar las inconsistencias del vuelo.
+2. Creación de “Corrección Guía Despachada” con adición de alerta al documento de despacho.
+***********
+
+version 3.2.2 07/09/2020
+1. En Formularios de “Crear guía” convertir el campo “Agente de Carga” en campo obligatorio.
+2. Crear “alerta” de nombre repetido en formulario de creación de “Agente de Carga” y “Consignatarios”.
+3. Adición en “Información de Guía” de documento PDF del despacho de Guías de “Trasbordos Directos”.
+***********
+
+version 3.2.1 24/08/2020
+1. Nueva Gráficas de “Análisis de Bodega” por número de kilos y por rango de fechas.
+2. Adición en el listado de guías a asociar factura, una alerta de que ya tiene facturas asociadas.
+3. En “Reporte de Facturación” generado para Excel, adicionar la sumatoria de Piezas, peso y volumen de las guías hijas que pertenecen a una master.
+***********
+
+version 3.2 18/08/2020
+1. Modificación de Formulario de Creación “Actuación Aduanera” con requisito de agregar la entidad a la que pertenece (Polfa, inca, Invima, etc)
+2. Modificación de Formulario de despacho de “Actuación Aduanera” con los siguientes cambios:
+3. Modificar impresión de planilla de Actuación aduanera para:
+4. Creación de módulo de Buscador de despachos para actuaciones aduaneras.
+5. Quitar la restricción de la creación de vehículos por cada Courier. 
+***********
+
+version 3.1 18/08/2019
+- Correccion de control de Privilegios para la creación de Actuacion Aduanera (Courier)
+- Correccion de control de Privilegios para modificacion de la guia (Courier)
+- Desactivacion de la vallidacion de privilegio por modulo de historial de guia, para que se controle desde cada objeto que desee acceder al modulo
+- Adición de Tipo de Actuacion Aduanera al inventario de Actuaciones Aduaneras (Courier)
+- Corrección en mensaje de modificación guardada en guia hija (Courier)
+- Modificación de Usuario Autorizador para la entrega de Guias con Actuacion Aduanera, se modifican las variables y el registro para que asocio funcionarios POLFA (Courier)
+- Correccion de reescritura de valor de fecha de finalizacion en la guia, utilizada para el control de seguridad, y que al momento de crear el documento de entrega se reescribia; esto afecta el informe personalizado enm la seccion de fechas.
+- Creación de Modulo de Reportes con graficas y Análisis (Courier)
+***********
+
+version 3.0 07/08/2019
+- Adicion de Modulo de Courrir
+- Correccion de campo visible a hidden en creacion de guias
+- Adicion de boton de flecha atras en el historial de la guia para redireccionamiento correcto a descripcion de la guia según su tipo
+- Se elimina la marca de agua de F-IP en el login
+***********
+
+version 2.13 - 23/02/2018
+- Modificacion del Menu prinicpal para inclusion de los nuevos modulos.
+- Adicion de Seccion de Seguridad como modulo independiente.
+- Inclusion de Privilegios y modulo para planilla de despaletizaje en modulo de seguridad.
+- Inclusion de Privilegios y modulo para planilla de cargue en modulo de despachos, seccion transportador.
+- Modificacion de archivos de upload para admimita el modulo desde diferentes modulos origenes para adjuntar archivos.
+- Creacion de Secciones T y U en mapa de Bodega.
+- Modulo para asociacion, modificacion y eliminación de varias facturas a una guia.
+- Modificacio Completa del Reporte de Facturacion
+***********
+
+version 2.11 - 16/02/2018
+- Modificacion del la tabla parametrica Deposito
+- Inclusion de consignatarios en el listado de guias de Liberaciones
+- Incluir iva en los valores de Liberaciones y en los Reportes Personalizados.
+***********
+
+version 2.10 - 09/02/2018
+- Adicion de purga automatica en modulo de consulta de guia por error 19; se adiciona una linea automática al historial de la guía.
+- Adicion de Filtro por vuelo del mas nuevo al mas antiguoe en el modulo de seleccionar vuelo para el proceso general del vuelo.
+- Direccionamiento hacia consulta general de la guia despues de consultar en el traking, para evitar el paso de consulta reducida a consulta completa.
+- Adicion de Aerolina de la guia en lo correos electrónicos
+- Se elimina el envio de correo de las guias faltante total.
+- Se modifica la descripcion del estado al consultar una guia faltante pasa de "En Bodega" a "Faltante"
+- Se adiciona la posibilidad de adjuntar un archivo a las novedades de la guia.
+- Se incorpora la adicion de novedades en la información general de la guía.
+***********
+
+Version 2.9
+- Adicion de Secciones 7 a 10 en mapa de Bodega 4.
+- Adicion de Islas S con 20 secciones en mapa de Bodega 4.
+***********
+
+Version 2.8
+- Asignacion de mensaje "SIN DEPOSITO" cuando deseen modifiar una guia de entrega en lugar de Arribo
+***********
+
+Version 2.7
+- Desactivar el compo obligatorio para crear consignatarios
+- Correccion de Error por Consignatario Desactivados al modificar la guia
+***********
+
+Version 2.6
+- Desactivacion de Todos los consignatarios e inserción de los datos suministrados por el clientes.
+- Creacion de Modulo para Consignatario para Digitadores, en donde se obliga a la verificacion de datos por Nit para evitar ducplicidad.
+- Se crear un nuevo privilegio para que los coordinadores puedan crear Consignatarios sin Nit ni correo desde el Modulo de Tablas Paramétricas.
+- Se establece Filtro por Pagina y Por estado Activo/ inactivo para todos los campos de todos los Modulos de las Tablas parametrica.
+- Se convierte en obligatorio la inserción del volumen para las guias.
+
+***********
+
+Version 2.5
+- Modificacion del reporte de Vuelo, se adiciona el funcionario que registra el dato en Manifiesto, Arrivo, Fin Descargue, Fin de vuelo
+- Se agrega orden Descendente al resultado de la busqueda de vuelos, desde el más moderno hasta el más antiguo.
+- Se agrega a la alerta del mapa la posición en la que se Ubica, Mueve o Elimina la guía.
+************
+
+Version 2.4
+- Adición de Busqueda Rápida de Guias al Módulo de Despaletizaje
+- Alerta de Guia Despaletizada y Deferencia de Piezas y Peso al gaurdar cada despaletizaje
+- Modificaion de la presentacion y del reporte del Despaletizaje, ahora solo marcará una X en el item al que corresponde (Caja, Tula, Rota, humeda, ETC)
+- Modificacion de Nombre de Reporte, pasa de "Reporte Despaletizaje Reducido" a "Reporte Despaletizaje Parcial".
+- Creacion de Reporte en PDF para el "Reporte Despaletizaje Parcial".
+- Adicion de Fecha y hora Registradas en la Finalizacio de la Guia al Tracking.
+- Adicion de la visualizacion de Observacion de Bodega a la informacion de la Guia.
+************
+
+Version 2.3
+- Adicion comando para la liberación de memoria del Servidor despues de Ejecutar Inventarios y Consulta de Guia
+- Adicion de Mapas, Bodega2 y Bodega4
+************
+
+Version 2.2
+- Cambio de la funcion Numeric2 para que evalue el copy - page del registro de las guias evitando incuir comas o letras en peso o volumen, para Registro de Guias, Despacho Directo, Despacho Cabotaje, Despacho Transbordo, Despacho Correo.
+- Cambio de la funcion que almacenaba el despacho de Descargue Directo que redondeaba el decimal del volumen y generaba una visualizacion diferente entre el volumen registrado y el despachado.
+- Correccion de programacion por error en el reporte personalizado cuando no se incluia "facturado a".
+- Correccion de tipo de salida en reporte personalizado, al arrojar el dato de peso de despaletizaje. Ahora arroja el peso en formato numerico y no en formato Texto para poder ser sumado en la hoja de calculo.
+- Adicion de Posicion de la guía en el mapa, al momento de generar el documento de Despacho Directo.
+************
+
+Version 2.1
+- Creacion de reporte de despaletizaje reducido para vuelos no finalizadas, vuelos aun en despaletizaje.
+- Corrección de menu de privilegios para reportes de despaletizaje
+- Desactivavion del objeto Validar - Preinspeccion en la BD+
+- Cambio de icono en modulo de asignacion de privilegios de usuario.
+- Agregar “Destino de la guía” al Módulo de Ubicación de Bodega para la segregación de la Bodega.
+- Adicion de información de “Despaletizaje” a modulo del reporte de vuelo.
+- Adición de Filtro por “Guías Bloqueadas” al módulo de Inventario.
+- Actualizacion Importabte del Modulo de "Inventario General" Nueva programacion para optimización considerablemente la respuesta de las consultas y los filtros.
+- Adicion de librerias de Destino y Despaletizaje.
+- Corrección de Error en el modulo de inventrio guias pausadas cuando las guias no tienen fecha de vencimiento.
+- Creación de Modulo de Pre-Inspección 
+************
+
+Version 2.0
+- Cambio de menu
+- Cambio de Diseño de mapa
+- Creacio de modulo despaletizaje
+- Creacion de modulo de Pre-inspecciones
+- Actualizacion de modulo de ubicacion: Creacion de Menu e busqueda
+- Actualizacion de modulo de consulta de ubicacion: Creacion de Menu e busqueda, direcciona hacia celda del mapa y no hacia el mapa total.
+- Actualizacion de modulo de lista de usuarios: Filtro de usuarios Activos e Inactivos
+- Creacio de Reporte de Despaletizaje
+************
